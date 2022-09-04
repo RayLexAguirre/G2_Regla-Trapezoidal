@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Metodos Numericos</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,200&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>Calculadora de la Regla Trapezoidal de multiple Aplicación</h1>
+    <p class="azul">Ingeniería en Software</p>
+    <p class="azul">"2°G" 2° Practica</p>    
+    <p class="azul">Aguirre Romero Ramón Alejandro</p>    
+        
+    
+  </div>
+
+  <div class="content">
+    <div>
+      <h2>Formulario de Registro</h2>
+      <div class="content-info">
+        <form>
+          <div class="field">
+            <div >
+              <label>B: <input id="posB" type="number" class="field2"> </label>
+            </div>
+            <h1>∫
+            <input id="quinta" type="number" class="field2">
+            <select id="quintaPotencia">
+                <option value="1">x⁵</option>
+                <option value="0">Null</option>
+            </select>
+            <input id="cuarta" type="number" class="field2">
+            <select id="cuartaPotencia">
+                <option value="1">x⁴</option>
+                <option value="0">Null</option>
+            </select>
+            <input id="tercera" type="number" class="field2">
+            <select id="terceraPotencia">
+                <option value="1">x³</option>
+                <option value="0">Null</option>
+            </select>
+            <input id="segunda" type="number" class="field2">
+            <select id="segundaPotencia">
+                <option value="1">x²</option>
+                <option value="0">Null</option>
+            </select>
+            <input id="primera" type="number" class="field2">
+            <select id="primeraPotencia">
+                <option value="1">x</option>
+                <option value="0">Null</option>
+            </select>
+            <input id="constante" type="number" class="field2">
+          </h1>
+
+          <div >
+            <label>A: <input id="posA" type="number" class="field2"> </label>
+          </div>
+          <div >
+            <label>Segmentación: <input id="segmentos" type="number" class="field2"> </label>
+          </div>
+            
+            
+          </div>
+          <div class="field">
+            <input id="btnRegister" type="button" value="Registrar">
+            <button onclick="limpiar();">Limpiar Campos</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div>
+        <h2>Resultados</h2>
+        <div class="content-result">
+          
+          <p>Formula: <span id="colFormula"></span></p>
+
+          <br>
+
+          <p>Altura: <span id="colAltura"></span></p>
+
+          <br>
+          
+          <p>Integral: <span id="colIntegral"></span></p>    
+
+          <br>
+          
+          <p>Integral I: <span id="colIntegralI"></span></p>
+          
+          <br>
+          
+          <p>I: <span id="colI"></span></p>
+
+          <br>
+          
+          <p>Er: <span id="colEr"></span></p>
+
+          <br>
+
+    </div>
+
+  </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
